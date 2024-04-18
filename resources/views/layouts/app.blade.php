@@ -35,8 +35,7 @@
 
     @yield('styles')
 </head>
-
-<<<<<<< HEAD
+    
 <body
     class="container text-white mx-auto mt-10 mb-10 max-w-lg bg-slate-100relative bg-cover bg-center bg-no-repeat bg-fixed"
     style="background-image: url('/images/list.jpg')">
@@ -64,7 +63,6 @@
             @endif
             @yield('content')
         </div>
-=======
 <body class="container mx-auto mt-10 mb-10 max-w-lg bg-slate-100">
     <h1 class="text-2xl mb-6">
         @yield('title')
@@ -86,7 +84,6 @@
             </div>
         @endif
         @yield('content')
->>>>>>> 3660a8a23d87c7d8f96ddf7c0b4ff4f3712fc877
     </div>
 </body>
 
