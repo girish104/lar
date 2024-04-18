@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # laravel-tasks-list
 
 Welcome to the Laravel Task List App! This simple application allows you to manage your tasks efficiently.
@@ -6,7 +5,6 @@ Welcome to the Laravel Task List App! This simple application allows you to mana
 # laravel tasks list project
 
 The Laravel Task List App is a straightforward web application designed to help users organize their tasks efficiently. Its primary purpose is to provide users with a platform to manage their tasks effortlessly.
->>>>>>> 3660a8a23d87c7d8f96ddf7c0b4ff4f3712fc877
 
 ## Installation
 
@@ -42,4 +40,3 @@ Once you've completed these steps, you can access the Laravel Task List App in y
 If you have any questions or encounter any issues during the installation process, feel free to reach out to us.
 
 Enjoy managing your tasks with the Laravel Task List App!
->>>>>>> 3660a8a23d87c7d8f96ddf7c0b4ff4f3712fc877
