@@ -4,6 +4,7 @@
     <div class="font-bold text-2xl text-yellow-400">the list of tasks -></div>
 @endsection
 
+
 @section('content')
     @forelse ($tasks as $task)
         <div class="flex items-center mb-2">

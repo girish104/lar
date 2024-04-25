@@ -41,7 +41,7 @@
             <button type="submit" class="btn">Mark as {{ $task->completed ? 'not completed' : 'Completed' }}</button>
         </form>
 
-        <form action="{{ route('tasks.destory', ['task' => $task->id]) }}" method="POST">
+        <form action="{{ route('tasks.destroy', ['task' => $task->id]) }}" method="POST">
             @csrf
             @method('DELETE')
             <button type="submit" class="btn">Delete</button>

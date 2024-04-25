@@ -30,14 +30,34 @@
         .error-message {
             @apply text-red-500 text-sm
         }
+
     </style>
     {{-- blade-formatter-enable --}}
 
-    @yield('styles')
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/list.jpg');
+            background-size: cover;
+        }
+    </style>
 </head>
-    
+
 
 <body class="container text-white mx-auto mt-10 mb-10 max-w-lg bg-slate-600 ">
+
+    <!-- Authentication Links -->
+    <div class="flex justify-end space-x-4">
+        @guest
+            <a href="{{ route('login') }}" class="link">Login</a>
+            <a href="{{ route('register') }}" class="link">Register</a>
+        @else
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="link">Logout</button>
+            </form>
+        @endguest
+    </div>
+
 
     <div class="relative p-4 mx-auto mt-8 max-w-md bg-cover bg-center bg-no-repeat rounded-lg bg-fixed">
 
@@ -51,10 +71,10 @@
 
             <div x-data="{ flash: true }">
                 @if (session()->has('success'))
-                    <div x-show = "flash"
-                        class=" relative mb-10 rounded border border-green-500 bg-green-100 px-4 py-3 text-green-700 text-lg"
+                    <div x-show="flash"
+                        class="relative mb-10 rounded border border-green-500 bg-green-100 px-4 py-3 text-green-700 text-lg"
                         role="alert">
-                        <Strong class="font-bold">Success!</Strong>
+                        <strong class="font-bold">Success!</strong>
                         <div>{{ session('success') }}</div>
                         <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -73,4 +93,3 @@
 </body>
 
 </html>
-
