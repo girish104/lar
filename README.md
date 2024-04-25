@@ -14,23 +14,13 @@ To get started with the Laravel Task List App, follow these steps:
 
 2. cd laravel-tasks-list
 
-<<<<<<< HEAD
 3. composer install
 
-4. Create Database:
+4. Create DB `tasks_list`
 
-  Create a database named "tasks_list" in your database management system (e.g., MySQL).
-  Update the DB_DATABASE value in the .env and .env.example files to tasks_list.
+5. Run `Composer Install` | `php artisan migrate --seed`
 
-5. php artisan migrate --seed
-
-6. php artisan serve
-=======
-3. Create DB `tasks_list`
-
-4. Run `Composer Install` | `php artisan migrate --seed`
-
-5. `php artisan serve`
+6. `php artisan serve`
 
 
 Once you've completed these steps, you can access the Laravel Task List App in your web browser.
